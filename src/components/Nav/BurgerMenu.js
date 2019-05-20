@@ -3,17 +3,21 @@ import { stack as Menu } from 'react-burger-menu';
 import './nav.css';
 
 export default class BurgerMenu extends React.Component {
-  showSettings (event) {
-    event.preventDefault();
-  }
-
   render () {
     return (
       <Menu right>
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a onClick={ this.showSettings } className="menu-item--small" href="/settings">Settings</a>
+        <a id="about" className="menu-item" href="/about">
+          <i className="far fa-address-card"></i>
+          <span className='anchor-link'>About </span>
+        </a>
+        <a id="projects" className="menu-item" href="/about">
+          <i className="fas fa-code-branch"></i>
+          <span className='anchor-link'>Projects</span>
+        </a>
+        <a id="contact" className="menu-item" href="/contact">
+          <i className="far fa-envelope"></i>
+          <span className='anchor-link'>Contact</span>
+        </a>
       </Menu>
     );
   }
