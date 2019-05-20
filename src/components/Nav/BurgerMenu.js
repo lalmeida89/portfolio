@@ -6,11 +6,11 @@ export default class BurgerMenu extends React.Component {
   render () {
     return (
       <Menu right>
-        <a id="about" className="menu-item" href="/about">
+        <a id="about" className="menu-item" href="/">
           <i className="far fa-address-card"></i>
           <span className='anchor-link'>About </span>
         </a>
-        <a id="projects" className="menu-item" href="/about">
+        <a id="projects" className="menu-item" href="/projects">
           <i className="fas fa-code-branch"></i>
           <span className='anchor-link'>Projects</span>
         </a>

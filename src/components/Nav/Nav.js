@@ -6,8 +6,7 @@ export default class Nav extends Component {
   constructor(props){
     super(props)
     this.state = {
-      location: '',
-      lastScrollY: 0,
+      location: ''
     };
   }
 
@@ -19,20 +18,14 @@ export default class Nav extends Component {
   }
 
   handleScroll = () => {
-    const { lastScrollY } = this.state;
     const currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY) {
+    if (currentScrollY >= 1) {
       this.setState({ location: 'navbar-show' });
     } else {
       this.setState({ location: 'navbar-hide' });
     }
-    console.log(this.state.location);
-    this.setState({ lastScrollY: currentScrollY });
+    console.log(currentScrollY);
   };
-
-  showSettings(event){
-    event.preventDefault()
-  }
 
   render() {
     return (
