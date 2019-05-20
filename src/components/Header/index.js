@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 import {HeaderWrapper} from './HeaderWrapper';
 import './header.css';
 
-const headerStyle = {
-  height: '200px',
-  width: '100%'
-}
 
 class Header extends Component {
   render() {
     return (
-      <div style={headerStyle} className='header-wrapper'>
-        <HeaderWrapper name='bob' desc='im bob' />
+      <div className='header-wrapper'>
+        <HeaderWrapper />
+        <figure id='header-picture'>
+          <picture>
+            <img
+              id='my-face'
+              src='https://pixel.nymag.com/imgs/fashion/daily/2018/08/17/magazine/tessa-thompson-1.w570.h712.jpg' />
+          </picture>
+        </figure>
       </div>
     );
   }

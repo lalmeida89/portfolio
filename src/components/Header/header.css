@@ -1,8 +1,57 @@
 .header-wrapper {
-  text-align: center;
-  background: pink;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
-  margin: 0 auto 20px;
-  top: 0;
+  background-color: #002938;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+  margin: 84px auto 20px;
+  width: 100%;
+  height: -webkit-fill-available;
+  position: relative;
+}
+
+#header-description {
+  margin: 5vh auto 0;
+  width: 60%;
+  padding: 20px;
+  color: white;
+}
+
+#header-picture {
+  position: absolute;
+  padding: 40px;
+  background: #01202b;
+  border-radius: 7px;
+}
+
+#my-face {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.2)
+}
+@media only screen and (min-width: 900px) {
+  #header {
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50%;
+    margin-left: 4vw;
+  }
+
+  #header-picture {
+    right: 0;
+    margin-top: 80px;
+    margin-right: 5vw;
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header {
+    width: 100%;
+    top: 0;
+  }
+
+  #header-description {
+    width: 100%;
+  }
 }

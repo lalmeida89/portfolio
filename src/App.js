@@ -1,18 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import Projects from './components/Projects'
-import Header from './components/Header'
+//import Projects from './components/Projects';
+import Header from './components/Header';
+import Nav from './components/Nav/Nav';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <Header />
-      <Projects />
-      </header>
-    </div>
-  );
+class App extends React.Component {
+   render() {
+    return (
+      <div className='App'>
+        <Nav />
+        <Header />
+      </div>
+     );
+   }
 }
 
 export default App;
