@@ -1,5 +1,5 @@
 .projects-container {
-  background-color: blue;
+  background-color: skyblue;
   text-align: center;
   margin: 0 auto;
   width: 100%;
@@ -7,8 +7,12 @@
 }
 
 .project-wrapper {
-  height: 100px;
+  height: contain;
   width: 90%;
   border: 1px solid white;
   margin: 10px auto;
+}
+
+.project-wrapper img {
+  width: inherit;
 }

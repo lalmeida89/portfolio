@@ -12,7 +12,8 @@ class Header extends Component {
           <picture>
             <img
               id='my-face'
-              src='https://pixel.nymag.com/imgs/fashion/daily/2018/08/17/magazine/tessa-thompson-1.w570.h712.jpg' />
+              src='https://pixel.nymag.com/imgs/fashion/daily/2018/08/17/magazine/tessa-thompson-1.w570.h712.jpg'
+              alt='it is me'/>
           </picture>
         </figure>
       </div>
