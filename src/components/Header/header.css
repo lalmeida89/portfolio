@@ -1,8 +1,8 @@
 .header-wrapper {
   background-color: #002938;
   background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   margin: 84px auto 20px;
   width: 100%;
   height: -webkit-fill-available;
@@ -14,6 +14,14 @@
   width: 60%;
   padding: 20px;
   color: white;
+}
+
+#header-description h1 {
+  font-size: 22px;
+}
+
+#header-description h2 {
+  font-size: 15px;
 }
 
 #header-picture {

@@ -22,6 +22,27 @@
   color: white;
 }
 
+.menu-list-anchors {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.menu-list-anchors p {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+}
+
+.menu-list-anchors p:hover {
+  cursor: pointer;
+  border-bottom: 4px solid blue;
+}
+
 #navbar-show {
   box-shadow: 0 2px 15px rgba(0,0,0,0.08);
   background-color: white;
@@ -106,7 +127,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 0.8em;
 }
 
-.bm-item-list a {
+.bm-item-list p {
   font-family: 'Raleway', Arial, sans-serif;
   padding: .8em;
   font-size: .9em;
@@ -117,7 +138,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin-left: 10px;
 }
 
-.bm-menu a {
+.bm-menu p {
   color: #b8b7ad;
   text-decoration: none;
 }

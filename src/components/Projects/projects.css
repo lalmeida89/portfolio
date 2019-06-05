@@ -1,18 +1,51 @@
 .projects-container {
-  background-color: skyblue;
   text-align: center;
   margin: 0 auto;
   width: 100%;
   height: inherit;
+  padding-top: 10px;
+  /*background-color: #002938;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');*/
 }
 
 .project-wrapper {
+  color: white;
   height: contain;
   width: 90%;
   border: 1px solid white;
+  border-radius: 5px;
   margin: 10px auto;
+  text-align: left;
+  padding: 35px 15px;
+  background-color: #002938;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
+  clip-path: polygon(50% 5%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
+}
+
+.projects-container h1 {
+  margin: -20px 0 -10px;
+}
+
+.project-wrapper p {
+  line-height: 1.3em;
+}
+
+.project-wrapper i {
+  padding: 3px;
+}
+
+.project-title {
+  font-size: 17px;
+  display: block;
+  font-weight: 700;
+  margin: 8px 0 5px;
 }
 
 .project-wrapper img {
-  width: inherit;
+  width: 90%;
+}
+
+@media screen and (max-width: 500px) {
+
 }

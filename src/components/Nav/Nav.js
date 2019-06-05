@@ -17,6 +17,37 @@ export default class Nav extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
+  componentDidMount() {
+    console.log(window);
+    console.log(parseInt(window.screen.width, 10) > 600);
+  }
+
+  scrollTransition = element => {
+    if (element = 'projects'){
+      window.scrollTo({ top: 700, behavior: 'smooth'})
+    }
+  }
+
+  checkScreenWidth = () => {
+    if(window.screen.width < 600){
+      return ( <BurgerMenu /> )
+    } else {
+      return (
+        <div className='menu-list-anchors'>
+          <p className="nav-item">
+            <span className='nav-anchor-link'>About </span>
+          </p>
+          <p className="nav-item" onClick={()=>this.scrollTransition('projects')}>
+            <span className='nav-anchor-link'>Projects</span>
+          </p>
+          <p className="nav-item" href="/contact">
+            <span className='nav-anchor-link'>Contact</span>
+          </p>
+        </div>
+      )
+    }
+  }
+
   handleScroll = () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY >= 1) {
@@ -33,7 +64,7 @@ export default class Nav extends Component {
         <div id='navbar-name'>
           <h4> Luiz A. </h4>
         </div>
-        <BurgerMenu />
+        {this.checkScreenWidth()}
       </div>
     );
   }
