@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const ProjectsWrapper = props => {
-  console.log(props.techStack);
   let techIcons = props.techStack.map((el, i) => (
     <i key={i} className={el}></i>
   ))

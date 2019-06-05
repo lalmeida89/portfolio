@@ -6,9 +6,34 @@ import FantasyRankerPSD from '../../images/fantasyRankerImg.png';
 import './projects.css';
 
 class MyProjects extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+        scrolledToProjects: false
+    }
+  }
+
+  componentWillMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    let currentScrollY = window.scrollY
+    if (currentScrollY >= 80){
+      this.setState({scrolledToProjects: true})
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+    console.log(this.state.scrolledToProjects);
+  }
+
   render() {
+    const {scrolledToProjects} = this.state
     return (
-      <div className='projects-container'>
+      <div className='projects-container' id={scrolledToProjects ? 'slide-in' : 'slide-out'}>
         <h1> Projects </h1>
         <ProjectsWrapper
           name='Band Together'

@@ -17,11 +17,6 @@ export default class Nav extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  componentDidMount() {
-    console.log(window);
-    console.log(parseInt(window.screen.width, 10) > 600);
-  }
-
   scrollTransition = element => {
     if (element = 'projects'){
       window.scrollTo({ top: 700, behavior: 'smooth'})
@@ -55,7 +50,6 @@ export default class Nav extends Component {
     } else {
       this.setState({ location: 'navbar-hide' });
     }
-    console.log(currentScrollY);
   };
 
   render() {

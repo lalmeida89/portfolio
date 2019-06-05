@@ -6,7 +6,8 @@ import Nav from './components/Nav/Nav';
 
 class App extends React.Component {
    render() {
-    return (
+     //const {scrolledToProjects} = this.state
+     return (
       <div className='App'>
         <Nav />
         <Header />

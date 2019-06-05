@@ -27,14 +27,23 @@
 #header-picture {
   position: absolute;
   padding: 40px;
-  background: #01202b;
   border-radius: 7px;
 }
 
 #my-face {
   width: 100%;
   border-radius: 4px;
-  box-shadow: 0 5px 30px rgba(0,0,0,0.2)
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.2)
+}
+
+#header-picture::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent 0%,#002938 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
 }
 @media only screen and (min-width: 900px) {
   #header {

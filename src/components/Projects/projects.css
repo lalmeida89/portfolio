@@ -2,10 +2,23 @@
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  height: inherit;
+  height: 400px;
   padding-top: 10px;
-  /*background-color: #002938;
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');*/
+  position: absolute;
+  opacity: 0;
+}
+
+#slide-in {
+  animation: slide-in 1s forwards ease-in;
+  -webkit-animation: slide-in 1s forwards ease-in;
+}
+
+@keyframes slide-in {
+    100% { opacity: 1 }
+}
+
+@-webkit-keyframes slide-in {
+    100% { opacity: 1}
 }
 
 .project-wrapper {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {HeaderWrapper} from './HeaderWrapper';
 import './header.css';
+import ProfilePic from '../../images/washington.jpg'
 
 
 class Header extends Component {
@@ -12,7 +13,7 @@ class Header extends Component {
           <picture>
             <img
               id='my-face'
-              src='https://pixel.nymag.com/imgs/fashion/daily/2018/08/17/magazine/tessa-thompson-1.w570.h712.jpg'
+              src={ProfilePic}
               alt='it is me'/>
           </picture>
         </figure>
