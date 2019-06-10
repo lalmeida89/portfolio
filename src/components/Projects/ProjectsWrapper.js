@@ -7,9 +7,11 @@ export const ProjectsWrapper = props => {
   return (
     <div className='project-wrapper'>
       <img src={props.imgSrc} alt={props.altSrc} />
-      <span className='project-title'> {props.name} </span>
-      {techIcons}
-      <p> {props.desc} </p>
+      <div className='project-description'>
+        <span className='project-title'> {props.name} </span>
+        {techIcons}
+        <p> {props.desc} </p>
+      </div>
     </div>
   )
 }

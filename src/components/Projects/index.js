@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {ProjectsWrapper} from './ProjectsWrapper'
+import ProjectVideo from './ProjectVideo'
 import BandTogetherPSD from '../../images/bandTogetherImg.png';
 import MockDraftPSD from '../../images/mockDraftImg.png';
 import FantasyRankerPSD from '../../images/fantasyRankerImg.png';
@@ -9,14 +10,15 @@ class MyProjects extends Component {
   constructor(props){
     super(props);
     this.state = {
-        scrolledToProjects: false
+        scrolledToProjects: false,
+        hover: false,
+        classname: 'hide'
     }
   }
 
   componentWillMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
-
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
@@ -30,20 +32,34 @@ class MyProjects extends Component {
     console.log(this.state.scrolledToProjects);
   }
 
+  hoverOn = () => {
+    this.setState({ hover: true, classname: 'show' });
+    console.log('hovering');
+  }
+
+  hoverOff = () => {
+    this.setState({ hover: false, classname: 'hide' });
+    console.log('not hovering');
+  }
+
   render() {
-    const {scrolledToProjects} = this.state
+    const {scrolledToProjects, hover, classname} = this.state
     return (
       <div className='projects-container' id={scrolledToProjects ? 'slide-in' : 'slide-out'}>
         <h1> Projects </h1>
-        <ProjectsWrapper
-          name='Band Together'
-          imgSrc={BandTogetherPSD}
-          altSrc='Band Together displayed in mobile, tablet, and desktop views'
-          desc="Band Together is an app for musicians looking to jam. View other's profiles
-            and click like on your favorite ones. If they like your profile, it's a match! A personal chatroom is created
-            and you can set up your next jam sesh in real time."
-          techStack={['fab fa-html5','fab fa-js-square','fab fa-node-js','fab fa-css3-alt']}
-            />
+        <span onMouseEnter={this.hoverOn}
+              onMouseLeave={this.hoverOff}>
+          <ProjectVideo title='bandTogetherImg' show={classname}/> 
+          <ProjectsWrapper
+            name='Band Together'
+            imgSrc={BandTogetherPSD}
+            altSrc='Band Together displayed in mobile, tablet, and desktop views'
+            desc="Band Together is an app for musicians looking to jam. View other's profiles
+              and click like on your favorite ones. If they like your profile, it's a match! A personal chatroom is created
+              and you can set up your next jam sesh in real time."
+            techStack={['fab fa-html5','fab fa-js-square','fab fa-node-js','fab fa-css3-alt']}
+          />
+        </span>
         <ProjectsWrapper
           name='Build-A-Champion Workshop'
           imgSrc={MockDraftPSD}
