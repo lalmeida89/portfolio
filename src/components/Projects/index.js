@@ -32,7 +32,7 @@ class MyProjects extends Component {
     console.log(this.state.scrolledToProjects);
   }
 
-  hoverOn = () => {
+  /*hoverOn = () => {
     this.setState({ hover: true, classname: 'show' });
     console.log('hovering');
   }
@@ -40,16 +40,13 @@ class MyProjects extends Component {
   hoverOff = () => {
     this.setState({ hover: false, classname: 'hide' });
     console.log('not hovering');
-  }
+  }*/
 
   render() {
     const {scrolledToProjects, hover, classname} = this.state
     return (
       <div className='projects-container' id={scrolledToProjects ? 'slide-in' : 'slide-out'}>
         <h1> Projects </h1>
-        <span onMouseEnter={this.hoverOn}
-              onMouseLeave={this.hoverOff}>
-          <ProjectVideo title='bandTogetherImg' show={classname}/> 
           <ProjectsWrapper
             name='Band Together'
             imgSrc={BandTogetherPSD}
@@ -59,7 +56,6 @@ class MyProjects extends Component {
               and you can set up your next jam sesh in real time."
             techStack={['fab fa-html5','fab fa-js-square','fab fa-node-js','fab fa-css3-alt']}
           />
-        </span>
         <ProjectsWrapper
           name='Build-A-Champion Workshop'
           imgSrc={MockDraftPSD}

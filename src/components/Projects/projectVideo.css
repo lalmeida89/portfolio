@@ -3,20 +3,17 @@
   height: 130%;
   background-color: #808080c7;
   z-index: 999;
-  position: absolute;
-  top: 0;
   overflow: hidden;
-  margin-top: 60px;
 }
 
 #hide {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
   animation: transition-out 1s forwards ease-in-out;
 }
 
 #show {
-  transform: translateX(-50%);
+  transform: translateY(-50%);
   opacity: 0;
   animation: transition-in 1s forwards ease-out;
 }
