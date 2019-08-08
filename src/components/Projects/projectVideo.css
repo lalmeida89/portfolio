@@ -1,13 +1,11 @@
 .projectVideo-outerDiv {
-  width: 100%;
-  height: 130%;
-  background-color: #808080c7;
+  width: fit-content;
   z-index: 999;
   overflow: hidden;
+  margin: 30px auto;
 }
 
 #hide {
-  transform: translateY(0);
   opacity: 1;
   animation: transition-out 1s forwards ease-in-out;
 }
@@ -21,24 +19,25 @@
 @keyframes transition-in {
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes transition-out {
   100% {
     opacity: 0;
-    transform: translateX(-50%);
+    height: 0;
+    transform: translateY(-50%);
     display: none;
   }
 }
 
 .projectVideo-innerDiv {
-  padding: 20px;
-  width: fit-content;
-  margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: red;
-  position: relative;
+  border-radius: 7px;
+}
+
+.projectVideo-innerDiv>iframe {
+  width: 100%;
+  height: 100%;
+  box-shadow: 20px 20px 30px #000333
 }

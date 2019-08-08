@@ -3,16 +3,14 @@
   background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
-  margin: 84px auto 20px;
+  margin: 82px auto 20px;
   width: 100%;
-  height: -webkit-fill-available;
-  position: relative;
 }
 
 #header-description {
   margin: 5vh auto 0;
   width: 60%;
-  padding: 20px;
+  padding: 10px 10vw;
   color: white;
 }
 
@@ -25,7 +23,6 @@
 }
 
 #header-picture {
-  position: absolute;
   padding: 40px;
   border-radius: 7px;
 }
@@ -45,21 +42,40 @@
   width: 100%;
   content: '';
 }
+
 @media only screen and (min-width: 900px) {
+  .header-wrapper {
+    height: 70vh;
+  }
+
   #header {
-    position: absolute;
-    top: 40%;
+    position: relative;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 50%;
-    margin-left: 4vw;
   }
 
   #header-picture {
+    position: absolute;
     right: 0;
-    margin-top: 80px;
-    margin-right: 5vw;
-    width: 35%;
+    width: 325px;
+  }
+
+  #header-description {
+    margin: 0 0 0 3vw;
+    position: absolute;
+    width: 40%;
+    padding: 10px 0;
+    left: 0;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+
+  #header-description h2 {
+    font-size: 2vw;
+  }
+
+  #header-description h1 {
+    font-size: 2.1vw;
   }
 }
 @media only screen and (max-width: 600px) {

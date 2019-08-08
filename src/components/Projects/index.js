@@ -32,16 +32,6 @@ class MyProjects extends Component {
     console.log(this.state.scrolledToProjects);
   }
 
-  /*hoverOn = () => {
-    this.setState({ hover: true, classname: 'show' });
-    console.log('hovering');
-  }
-
-  hoverOff = () => {
-    this.setState({ hover: false, classname: 'hide' });
-    console.log('not hovering');
-  }*/
-
   render() {
     const {scrolledToProjects, hover, classname} = this.state
     return (

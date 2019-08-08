@@ -9,14 +9,11 @@ class Header extends Component {
     return (
       <div className='header-wrapper'>
         <HeaderWrapper />
-        <figure id='header-picture'>
-          <picture>
-            <img
-              id='my-face'
-              src={ProfilePic}
-              alt='it is me'/>
-          </picture>
-        </figure>
+        <div id='header-picture'>
+          <img id='my-face'
+            src={ProfilePic}
+            alt='it is me' />
+        </div>
       </div>
     );
   }
