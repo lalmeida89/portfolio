@@ -33,7 +33,13 @@ export class ProjectsWrapper extends Component {
           <span className='project-title'> {this.props.name} </span>
           {this.renderTechIcons(this.props.techStack)}
           <p> {this.props.desc} </p>
-          <button onClick={()=>this.toggleState()}> Click for video </button>
+          <a href={this.props.codeLink} target='_blank'>
+            <button className='linkToCode-btn link-btn'>View Code</button>
+          </a>
+          <a href={this.props.projectLink} target='_blank'>
+            <button className='linkToSite-btn link-btn'>View Project</button>
+          </a>
+          <button className='demo-btn' onClick={()=>this.toggleState()}> Watch demo </button>
           {showVideo ? <ProjectVideo show='show'/> : <ProjectVideo show='hide'/>}
         </div>
       </div>

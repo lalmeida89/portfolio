@@ -45,6 +45,8 @@ class MyProjects extends Component {
               and click like on your favorite ones. If they like your profile, it's a match! A personal chatroom is created
               and you can set up your next jam sesh in real time."
             techStack={['fab fa-html5','fab fa-js-square','fab fa-node-js','fab fa-css3-alt']}
+            projectLink='https://bandtogether-app.herokuapp.com'
+            codeLink='https://github.com/lalmeida89/BandTogether'
           />
         <ProjectsWrapper
           name='Build-A-Champion Workshop'
@@ -57,6 +59,8 @@ class MyProjects extends Component {
             schedule and player rankings, until you've built the
 			      roster of your dreams."
           techStack={['fab fa-html5','fab fa-js-square','fab fa-react','fab fa-css3-alt']}
+          projectLink='http://sharp-nightingale-21d173.netlify.com/'
+          codeLink='https://github.com/lalmeida89/FantasyFootball-MockDraft'
           />
         <ProjectsWrapper
           name='Fantasy Football Ranker'
@@ -66,6 +70,8 @@ class MyProjects extends Component {
             where players ended up last year in their rankings. Built with React and given a sleek and smooth
             interface with the use of React Motion"
           techStack={['fab fa-html5','fab fa-js-square','fab fa-react','fab fa-css3-alt']}
+          projectLink='https://romantic-yonath-4a367e.netlify.com/'
+          codeLink='https://github.com/lalmeida89/FantasyFootball-Ranker'
           />
       </div>
     );
