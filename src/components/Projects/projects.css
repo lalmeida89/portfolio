@@ -2,7 +2,6 @@
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  height: 400px;
   padding-top: 10px;
   position: absolute;
   transform: translateX(-50%);
@@ -18,24 +17,23 @@
 @keyframes slide-in {
     75% { transform:  translateX(1%);}
     90% { transform: translateX(-1%);}
-    100% { transform: translateX(0%); opacity: 1 }
+    100%{ transform: translateX(0%); opacity: 1 }
 }
 
 @-webkit-keyframes slide-in {
     75% { transform:  translateX(1%);}
     90% { transform: translateX(-1%);}
-    100% { -webkit-transform: translateX(0%); opacity: 1}
+    100%{ transform: translateX(0%); opacity: 1}
 }
 
 .project-wrapper {
   color: white;
-  height: contain;
   width: 90%;
   border: 1px solid white;
   border-radius: 5px;
   margin: 10px auto;
   text-align: left;
-  padding: 60px;
+  padding: 48px 55px;
   background-color: #002938;
   background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
   -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
@@ -44,6 +42,7 @@
 
 .project-description {
   padding: 0 10px 5px;
+  position: relative;
 }
 .projects-container h1 {
   margin: -20px 0 -10px;
@@ -68,6 +67,11 @@
   width: 90%;
 }
 
+.project-links {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
 .link-btn {
   border: 1px solid black;
   background-color: red;
@@ -76,12 +80,42 @@
 }
 
 .demo-btn {
-  position: relative;
+  display: block;
   margin: 20px auto;
+  position: relative;
   background-color: blue;
   border-radius: 7px;
 }
 
-@media screen and (max-width: 500px) {
+#short-wrapper{
+  animation: shorten 1s forwards ease-out;
+  -webkit-animation: shorten 1s forwards ease-out;
+}
 
+#long-wrapper {
+  animation: lengthen 1s forwards ease-out;
+  -webkit-animation: lengthen 1s forwards ease-out;
+}
+
+@media screen and (max-width: 500px) {
+  @-webkit-keyframes lengthen {
+      0% { height: 550px; }
+      100%{ height: 750px; }
+  }
+  @keyframes lengthen {
+      0% { height: 550px; }
+      100%{ height: 750px; }
+  }
+  @-webkit-keyframes shorten {
+      0% { height: 750px; }
+      100%{ height: 550px; }
+  }
+  @keyframes shorten {
+      0% { height: 750px; }
+      100%{ height: 550px; }
+  }
+
+  .link-btn, .demo-btn {
+    width: 90px;
+  }
 }

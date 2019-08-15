@@ -23,6 +23,7 @@
 }
 
 .menu-list-anchors {
+  font-weight: bold;
   right: 30px;
   position: absolute;
   top: 50%;
@@ -31,7 +32,6 @@
 }
 
 .menu-list-anchors p {
-  color: white;
   text-decoration: none;
   margin-left: 10px;
   display: inline-block;
@@ -81,7 +81,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #808288;
+  background: white;
 }
 
 /* Color/shape of burger icon bars on hover*/

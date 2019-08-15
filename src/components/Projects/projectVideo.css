@@ -17,15 +17,18 @@
 }
 
 @keyframes transition-in {
-  100% {
+  30% { opacity: 0;}
+  80% { opacity: .5;}
+  100%{
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes transition-out {
-  100% {
-    opacity: 0;
+  20% { opacity: .5;}
+  40% { opacity: 0;}
+  100%{
     height: 0;
     transform: translateY(-50%);
     display: none;

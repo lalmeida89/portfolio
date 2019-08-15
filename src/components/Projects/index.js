@@ -53,10 +53,8 @@ class MyProjects extends Component {
           imgSrc={MockDraftPSD}
           altSrc='Build-A-Champion Workshop displayed in mobile, tablet, and desktop views'
           desc="Struggling to build the perfect roster? Are you just plain bad at Fantasy Football?
-            Look no further. With Build-A-Champion Workshop, you'll go from zero to hero. Well maybe not hero,
-            but definitely better than zero.
-			      Practice drafting against the computer, check out the latest player news,
-            schedule and player rankings, until you've built the
+            Look no further. Practice drafting against the computer, check out the latest player news,
+            schedule and player rankings, and build the
 			      roster of your dreams."
           techStack={['fab fa-html5','fab fa-js-square','fab fa-react','fab fa-css3-alt']}
           projectLink='http://sharp-nightingale-21d173.netlify.com/'
