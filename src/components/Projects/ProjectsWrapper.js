@@ -6,26 +6,22 @@ export class ProjectsWrapper extends Component {
   constructor(props){
     super(props);
     this.state = {
-      className: 'hide',
       showVideo: false
     }
   }
-
   renderTechIcons = arr => {
     return arr.map((el, i) => (
       <i key={i} className={el}></i>
     ))
   }
-
   toggleState = () => {
-    console.log('video should show');
     this.setState(prevState => ({
       showVideo: !prevState.showVideo
     }));
   }
 
   render() {
-    const {className, showVideo} = this.state
+    const {showVideo} = this.state
     return (
       <div className='project-wrapper' id={showVideo ? 'long-wrapper' : 'short-wrapper'}>
         <img src={this.props.imgSrc} alt={this.props.altSrc} />
