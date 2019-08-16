@@ -3,27 +3,10 @@
   margin: 0 auto;
   width: 100%;
   padding-top: 10px;
-  position: absolute;
+  position: relative;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   opacity: 0;
-}
-
-#slide-in {
-  animation: slide-in 1s forwards ease-out;
-  -webkit-animation: slide-in 1s forwards ease-out;
-}
-
-@keyframes slide-in {
-    75% { transform:  translateX(1%);}
-    90% { transform: translateX(-1%);}
-    100%{ transform: translateX(0%); opacity: 1 }
-}
-
-@-webkit-keyframes slide-in {
-    75% { transform:  translateX(1%);}
-    90% { transform: translateX(-1%);}
-    100%{ transform: translateX(0%); opacity: 1}
 }
 
 .project-wrapper {
@@ -96,6 +79,24 @@
   animation: lengthen 1s forwards ease-out;
   -webkit-animation: lengthen 1s forwards ease-out;
 }
+
+#slide-in {
+  animation: slide-in 1s forwards ease-out;
+  -webkit-animation: slide-in 1s forwards ease-out;
+}
+
+@keyframes slide-in {
+    75% { transform:  translateX(1%);}
+    90% { transform: translateX(-1%);}
+    100%{ transform: translateX(0%); opacity: 1 }
+}
+
+@-webkit-keyframes slide-in {
+    75% { transform:  translateX(1%);}
+    90% { transform: translateX(-1%);}
+    100%{ transform: translateX(0%); opacity: 1}
+}
+
 
 @media screen and (max-width: 500px) {
   @-webkit-keyframes lengthen {

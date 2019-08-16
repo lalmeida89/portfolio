@@ -1,0 +1,30 @@
+.aboutMe-wrapper {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.aboutMe-description {
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 auto 30px;
+  padding: 28px 55px 40px;
+  width: 90%;
+  background-color: #002938;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  color: white;
+  -webkit-clip-path: polygon(50% 8%, 100% 0, 100% 88%, 50% 100%, 88%, 0 0);
+  clip-path: polygon(50% 8%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+}
+
+.aboutMe-wrapper h1 {
+  margin: 20px 0 0;
+  color: #002938;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+  .aboutMe-description {
+  }
+}
