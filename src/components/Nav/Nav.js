@@ -19,7 +19,13 @@ export default class Nav extends Component {
 
   scrollTransition = element => {
     if (element == 'projects'){
-      window.scrollTo({ top: 700, behavior: 'smooth'})
+      window.scrollTo({ top: 710, behavior: 'smooth'})
+    }
+    if (element == 'aboutMe'){
+      window.scrollTo({ top: 3000, behavior: 'smooth'})
+    }
+    if (element == 'contact'){
+      window.scrollTo({ top: 3000, behavior: 'smooth'})
     }
   }
 
@@ -29,13 +35,13 @@ export default class Nav extends Component {
     } else {
       return (
         <div className='menu-list-anchors'>
-          <p className="nav-item">
-            <span className='nav-anchor-link'>About </span>
-          </p>
           <p className="nav-item" onClick={()=>this.scrollTransition('projects')}>
             <span className='nav-anchor-link'>Projects</span>
           </p>
-          <p className="nav-item" href="/contact">
+          <p className="nav-item" onClick={()=>this.scrollTransition('aboutMe')}>
+            <span className='nav-anchor-link'>About </span>
+          </p>
+          <p className="nav-item" onClick={()=>this.scrollTransition('contact')}>
             <span className='nav-anchor-link'>Contact</span>
           </p>
         </div>

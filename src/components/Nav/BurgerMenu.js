@@ -20,10 +20,10 @@ export default class BurgerMenu extends React.Component {
 
   scrollTransition = element => {
     if (element == 'aboutMe'){
-      window.scrollTo({ top: 700, behavior: 'smooth'})
+      window.scrollTo({ top: 3000, behavior: 'smooth'})
     }
     if (element == 'projects'){
-      window.scrollTo({ top: 1100, behavior: 'smooth'})
+      window.scrollTo({ top: 710, behavior: 'smooth'})
     }
     this.closeMenu()
   }
@@ -32,13 +32,13 @@ export default class BurgerMenu extends React.Component {
     return (
       <Menu right isOpen={this.state.menuOpen}
             onStateChange={(state)=> this.handleStateChange(state)}>
-        <p id="about" className="menu-item" onClick={()=>this.scrollTransition('aboutMe')}>
-          <i className="far fa-address-card"></i>
-          <span className='anchor-link'>About </span>
-        </p>
         <p id="projects" className="menu-item" onClick={()=>this.scrollTransition('projects')}>
           <i className="fas fa-code-branch"></i>
           <span className='anchor-link'>Projects</span>
+        </p>
+        <p id="about" className="menu-item" onClick={()=>this.scrollTransition('aboutMe')}>
+          <i className="far fa-address-card"></i>
+          <span className='anchor-link'>About </span>
         </p>
         <p id="contact" className="menu-item" href="/contact">
           <i className="far fa-envelope"></i>

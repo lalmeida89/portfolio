@@ -1,0 +1,11 @@
+.contactMe-wrapper {
+  position:relative;
+  bottom: 0;
+  background: blue;
+  width: 100%;
+  text-align: center;
+}
+
+.contactMe-child p{
+  margin-bottom: 0;
+}
