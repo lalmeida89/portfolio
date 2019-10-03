@@ -1,8 +1,7 @@
 .aboutMe-wrapper {
-  width: 100%;
   text-align: center;
   position: relative;
-  margin-bottom: 100px;
+  margin: 33px auto 100px;
 }
 
 .aboutMe-description {
@@ -25,7 +24,14 @@
   color: #002938;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
-  .aboutMe-description {
+@media screen and (max-width: 625px) {
+  .aboutMe-wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 626px) {
+  .aboutMe-wrapper {
+    width: 700px;
   }
 }

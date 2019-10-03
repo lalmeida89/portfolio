@@ -18,13 +18,13 @@ export default class Nav extends Component {
   }
 
   scrollTransition = element => {
-    if (element == 'projects'){
+    if (element === 'projects'){
       window.scrollTo({ top: 710, behavior: 'smooth'})
     }
-    if (element == 'aboutMe'){
+    if (element === 'aboutMe'){
       window.scrollTo({ top: 3000, behavior: 'smooth'})
     }
-    if (element == 'contact'){
+    if (element === 'contact'){
       window.scrollTo({ top: 3000, behavior: 'smooth'})
     }
   }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {ProjectsWrapper} from './ProjectsWrapper'
-import ProjectVideo from './ProjectVideo'
 import BandTogetherPSD from '../../images/bandTogetherImg.png';
 import MockDraftPSD from '../../images/mockDraftImg.png';
 import FantasyRankerPSD from '../../images/fantasyRankerImg.png';
@@ -10,9 +9,7 @@ class MyProjects extends Component {
   constructor(props){
     super(props);
     this.state = {
-        scrolledToProjects: false,
-        hover: false,
-        classname: 'hide'
+        scrolledToProjects: false
     }
   }
 
@@ -33,7 +30,7 @@ class MyProjects extends Component {
   }
 
   render() {
-    const {scrolledToProjects, hover, classname} = this.state
+    const {scrolledToProjects} = this.state
     return (
       <div className='projects-container' id={scrolledToProjects ? 'slide-in' : 'slide-out'}>
         <h1> Projects </h1>
@@ -47,6 +44,7 @@ class MyProjects extends Component {
             techStack={['fab fa-html5','fab fa-js-square','fab fa-node-js','fab fa-css3-alt']}
             projectLink='https://bandtogether-app.herokuapp.com'
             codeLink='https://github.com/lalmeida89/BandTogether'
+            vidSrc='https://www.youtube.com/embed/IJrKlSkxRHA'
           />
         <ProjectsWrapper
           name='Build-A-Champion Workshop'
@@ -59,6 +57,7 @@ class MyProjects extends Component {
           techStack={['fab fa-html5','fab fa-js-square','fab fa-react','fab fa-css3-alt']}
           projectLink='http://sharp-nightingale-21d173.netlify.com/'
           codeLink='https://github.com/lalmeida89/FantasyFootball-MockDraft'
+          vidSrc='https://www.youtube.com/embed/IJrKlSkxRHA'
           />
         <ProjectsWrapper
           name='Fantasy Football Ranker'
@@ -70,6 +69,7 @@ class MyProjects extends Component {
           techStack={['fab fa-html5','fab fa-js-square','fab fa-react','fab fa-css3-alt']}
           projectLink='https://romantic-yonath-4a367e.netlify.com/'
           codeLink='https://github.com/lalmeida89/FantasyFootball-Ranker'
+          vidSrc='https://www.youtube.com/embed/IJrKlSkxRHA'
           />
       </div>
     );

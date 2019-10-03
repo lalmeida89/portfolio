@@ -19,10 +19,10 @@ export default class BurgerMenu extends React.Component {
   }
 
   scrollTransition = element => {
-    if (element == 'aboutMe'){
+    if (element === 'aboutMe'){
       window.scrollTo({ top: 3000, behavior: 'smooth'})
     }
-    if (element == 'projects'){
+    if (element === 'projects'){
       window.scrollTo({ top: 710, behavior: 'smooth'})
     }
     this.closeMenu()

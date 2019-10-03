@@ -30,15 +30,15 @@ export class ProjectsWrapper extends Component {
           {this.renderTechIcons(this.props.techStack)}
           <p> {this.props.desc} </p>
           <div className='project-links'>
-            <a href={this.props.codeLink} target='_blank'>
+            <a href={this.props.codeLink} target='_blank' rel="noopener noreferrer">
               <button className='linkToCode-btn link-btn'>View Code</button>
             </a>
-            <a href={this.props.projectLink} target='_blank'>
+            <a href={this.props.projectLink} target='_blank' rel="noopener noreferrer">
               <button className='linkToSite-btn link-btn'>View Project</button>
             </a>
           </div>
           <button className='demo-btn' onClick={()=>this.toggleState()}> Watch demo </button>
-          {showVideo ? <ProjectVideo show='show'/> : <ProjectVideo show='hide'/>}
+          <ProjectVideo show={showVideo ? 'show' : 'hide'} videoSource={this.props.vidSrc} />
         </div>
       </div>
     )

@@ -6,9 +6,9 @@ class ProjectVideo extends Component {
     return (
       <div className='projectVideo-outerDiv' id={this.props.show}>
         <div className='projectVideo-innerDiv'>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/bebuiaSKtU4"
+          <iframe width="560" height="315" src={this.props.videoSource}
           frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen></iframe>
+          allowFullScreen title='projectVideo'></iframe>
         </div>
       </div>
     );
