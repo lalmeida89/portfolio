@@ -24,6 +24,80 @@
   color: #002938;
 }
 
+@keyframes pictureShrink {
+    100%  {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+}
+
+@-webkit-keyframes pictureShrink {
+  100%  {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*
+@keyframes pictureGrow-topDiv {
+    100%  {
+      border-radius: 12px;
+      width: 250px;
+      height: 250px;
+    }
+}
+
+@-webkit-keyframes pictureGrow-topDiv {
+  100%  {
+    border-radius: 12px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@keyframes pictureGrow-pictureDiv {
+    100%  {
+      border-radius: 12px;
+      width: 200px;
+      height: 200px;
+    }
+}
+
+@-webkit-keyframes pictureGrow-pictureDiv {
+  100%  {
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+  }
+}*/
+
+#hideImg .aboutMe-topDiv, #hideImg .aboutMe-topDiv img{
+  animation: pictureShrink 1s forwards ease-in-out;
+  -webkit-animation: pictureShrink 1s forwards ease-in-out;
+}
+
+.aboutMe-topDiv {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  border: 1px dashed green;
+  margin: 20px auto;
+  background-color: #002938;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  position: relative;
+}
+
+#myFace-but-small {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+  transform: translateY(10%);
+}
+
 @media screen and (max-width: 625px) {
   .aboutMe-wrapper {
     width: 90%;

@@ -26,7 +26,7 @@ class MyProjects extends Component {
       this.setState({scrolledToProjects: true})
       window.removeEventListener('scroll', this.handleScroll);
     }
-    console.log(this.state.scrolledToProjects);
+    console.log(this.state.scrolledToProjects, currentScrollY);
   }
 
   render() {
