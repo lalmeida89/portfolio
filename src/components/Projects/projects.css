@@ -55,11 +55,17 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .link-btn {
   border: 1px solid black;
   background-color: red;
   border-radius: 7px;
   margin: 0 10px;
+}
+
+.link-btn:hover, .demo-btn:hover {
+  cursor: pointer;
+  background-color: skyblue;
 }
 
 .demo-btn {

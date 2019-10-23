@@ -19,11 +19,18 @@ export default class AboutMe extends Component {
 
   handleScroll = () => {
     let currentScrollY = window.scrollY
-    if (currentScrollY >= 2500){
+    let screenWidth = window.screen.width
+    if (screenWidth < 600) {
+      if (currentScrollY >= 2000){
+        this.setState({scrolledToAboutMe: true})
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+    }
+    if (currentScrollY >= 2300){
       this.setState({scrolledToAboutMe: true})
       window.removeEventListener('scroll', this.handleScroll);
     }
-    console.log(this.state.scrolledToAboutMe, currentScrollY);
+    console.log(this.state.scrolledToAboutMe, currentScrollY, window);
   }
 
   render() {
@@ -32,10 +39,10 @@ export default class AboutMe extends Component {
       <div className='aboutMe-wrapper'
            id={scrolledToAboutMe ? 'hideImg' : 'showImg'}>
         <h1> About Me </h1>
-        <div className='aboutMe-topDiv'>
-          <img id='myFace-but-small' src={ProfilePic} alt='it is me' />
-        </div>
         <div className='aboutMe-description aboutMe-bottomDiv'>
+          <div className='aboutMe-topDiv'>
+            <img id='myFace-but-small' src={ProfilePic} alt='it is me' />
+          </div>
           <p>I went to college for Civil Engineering and there learned that I
             enjoyed building websites more than I liked building bridges.
             I'm an avid musician, Magic The Gathering and Lord of the Rings nerd,

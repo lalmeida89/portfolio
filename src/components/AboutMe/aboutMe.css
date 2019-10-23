@@ -2,20 +2,20 @@
   text-align: center;
   position: relative;
   margin: 33px auto 100px;
+  height: 400px;
 }
 
 .aboutMe-description {
   margin: 0 auto;
   text-align: left;
   border-radius: 5px;
-  margin: 0 auto 30px;
-  padding: 28px 55px 40px;
-  width: 50px;
-  height: 50px;
+  margin: 10px auto 30px;
+  padding: 5px 55px 40px;
+  height: 250px;
   background-color: #002938;
   color: transparent;
-  -webkit-clip-path: polygon(50% 8%, 100% 0, 100% 88%, 50% 100%, 88%, 0 0);
-  clip-path: polygon(50% 8%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+  /*-webkit-clip-path: polygon(50% 8%, 100% 0, 100% 88%, 50% 100%, 88%, 0 0);
+  clip-path: polygon(50% 8%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);*/
   background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
 }
 
@@ -43,8 +43,7 @@
 
 @keyframes descriptionGrow {
   100% {
-    width: 90%;
-    height: 200px;
+    height: 400px;
     border-radius: 10px;
   }
 }
@@ -52,7 +51,7 @@
 @-webkit-keyframes descriptionGrow {
   100% {
     width: 90%;
-    height: 200px;
+    height: 400px;
     border-radius: 10px;
   }
 }
@@ -80,45 +79,44 @@
   }
 }
 
+/*
 #hideImg .aboutMe-topDiv, #hideImg .aboutMe-topDiv img{
   animation: pictureShrink 1500ms forwards ease-in-out;
   -webkit-animation: pictureShrink 1500ms forwards ease-in-out;
 }
+*/
 
 
 #hideImg .aboutMe-bottomDiv{
-  animation: descriptionGrow 1500ms forwards ease-in-out;
-  -webkit-animation: descriptionGrow 1500ms forwards ease-in-out;
+  animation: descriptionGrow 750ms forwards ease-in-out;
+  -webkit-animation: descriptionGrow 750ms forwards ease-in-out;
 }
 
 #hideImg .aboutMe-description p {
-  animation: descriptionText-fadeIn 500ms forwards ease-in 1500ms;
-  -webkit-animation: descriptionText-fadeIn 500ms forwards ease-in 1500ms;
+  animation: descriptionText-fadeIn 250ms forwards ease-in 750ms;
+  -webkit-animation: descriptionText-fadeIn 250ms forwards ease-in 750ms;
 }
 
 .aboutMe-topDiv {
-  width: 250px;
-  height: 250px;
-  border-radius: 12px;
-  border: 1px dashed green;
+  border-radius: 50%;
   margin: 20px auto;
-  background-color: #002938;
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
-  position: relative;
 }
 
 #myFace-but-small {
   width: 150px;
   height: 150px;
-  border-radius: 12px;
+  border-radius: 50%;
   margin: 0 auto;
   display: block;
-  transform: translateY(10%);
 }
 
 @media screen and (max-width: 625px) {
   .aboutMe-wrapper {
     width: 90%;
+  }
+
+  .aboutMe-description p {
+    font-size: 12px;
   }
 }
 

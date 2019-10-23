@@ -4,7 +4,7 @@ import './header.css';
 import ProfilePic from '../../images/washington.jpg'
 
 
-class Header extends Component {
+export default class Header extends Component {
   render() {
     return (
       <div className='header-wrapper'>
@@ -18,4 +18,3 @@ class Header extends Component {
     );
   }
 }
-export default Header
