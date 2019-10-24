@@ -12,13 +12,12 @@
 .project-wrapper {
   color: white;
   width: 90%;
-  border: 1px solid white;
   border-radius: 15px;
   margin: 10px auto;
   text-align: left;
   padding: 48px 55px;
-  background-color: #002938;
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  background-color: #171d257a;
+  /*background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');*/
   -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
   clip-path: polygon(50% 5%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
 }

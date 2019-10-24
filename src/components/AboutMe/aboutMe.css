@@ -12,16 +12,13 @@
   margin: 10px auto 30px;
   padding: 5px 55px 40px;
   height: 250px;
-  background-color: #002938;
+  background-color: #171d257a;
   color: transparent;
-  /*-webkit-clip-path: polygon(50% 8%, 100% 0, 100% 88%, 50% 100%, 88%, 0 0);
-  clip-path: polygon(50% 8%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);*/
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
 }
 
 .aboutMe-wrapper h1 {
   margin: 20px 0 0;
-  color: #002938;
+  color: skyblue;
 }
 
 @keyframes pictureShrink {
@@ -88,13 +85,13 @@
 
 
 #hideImg .aboutMe-bottomDiv{
-  animation: descriptionGrow 750ms forwards ease-in-out;
-  -webkit-animation: descriptionGrow 750ms forwards ease-in-out;
+  animation: descriptionGrow 1000ms forwards ease-in-out;
+  -webkit-animation: descriptionGrow 1000ms forwards ease-in-out;
 }
 
 #hideImg .aboutMe-description p {
-  animation: descriptionText-fadeIn 250ms forwards ease-in 750ms;
-  -webkit-animation: descriptionText-fadeIn 250ms forwards ease-in 750ms;
+  animation: descriptionText-fadeIn 500ms forwards ease-in 1000ms;
+  -webkit-animation: descriptionText-fadeIn 500ms forwards ease-in 1000ms;
 }
 
 .aboutMe-topDiv {

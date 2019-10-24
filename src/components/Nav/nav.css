@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-
 .left-side-nav {
   display: inline-block;
   position: absolute;
@@ -16,9 +15,8 @@
   left: 0;
   z-index: 800;
   height: 84px;
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
   box-shadow: none;
-  background-color: #002938;
+  background-color: #171d257a;
   color: white;
 }
 
@@ -45,7 +43,7 @@
 
 #navbar-show {
   box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-  background-color: white;
+  background-color: #171d257a;
   height: 102px;
   color: #264753;
 }
