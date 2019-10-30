@@ -31,13 +31,13 @@ export class ProjectsWrapper extends Component {
           <p> {this.props.desc} </p>
           <div className='project-links'>
             <a href={this.props.codeLink} target='_blank' rel="noopener noreferrer">
-              <button className='linkToCode-btn link-btn'>View Code</button>
+              <button className='linkToCode-btn link-btn'>VIEW CODE</button>
             </a>
             <a href={this.props.projectLink} target='_blank' rel="noopener noreferrer">
-              <button className='linkToSite-btn link-btn'>View Project</button>
+              <button className='linkToSite-btn link-btn'>VIEW PROJECT</button>
             </a>
+            <button className='demo-btn' onClick={()=>this.toggleState()}> WATCH DEMO </button>
           </div>
-          <button className='demo-btn' onClick={()=>this.toggleState()}> Watch demo </button>
           <ProjectVideo show={showVideo ? 'show' : 'hide'} videoSource={this.props.vidSrc} />
         </div>
       </div>

@@ -10,6 +10,7 @@
   margin: 40px 0 5px;
   font-size: 150px;
   text-align: justify;
+  color: #66fcf1;
 }
 
 #header-description {
@@ -33,7 +34,7 @@
 #header-picture::after {
   display: block;
   position: relative;
-  background-image: linear-gradient(to bottom, transparent 0%,#002938 100%);
+  background-image: linear-gradient(to bottom, transparent 0%,#0b0c10 100%);
   margin-top: -150px;
   height: 150px;
   width: 100%;

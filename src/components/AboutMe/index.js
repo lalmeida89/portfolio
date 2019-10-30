@@ -38,7 +38,6 @@ export default class AboutMe extends Component {
     return (
       <div className='aboutMe-wrapper'
            id={scrolledToAboutMe ? 'hideImg' : 'showImg'}>
-        <h1> About Me </h1>
         <div className='aboutMe-description aboutMe-bottomDiv'>
           <div className='aboutMe-topDiv'>
             <img id='myFace-but-small' src={ProfilePic} alt='it is me' />

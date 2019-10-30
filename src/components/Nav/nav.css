@@ -16,8 +16,8 @@
   z-index: 800;
   height: 84px;
   box-shadow: none;
-  background-color: #171d257a;
-  color: white;
+  background-color: #212428;
+  color: #66fcf1;
 }
 
 .menu-list-anchors {
@@ -38,14 +38,14 @@
 
 .menu-list-anchors p:hover {
   cursor: pointer;
-  border-bottom: 4px solid blue;
+  border-bottom: 2px solid #66fcf1;
 }
 
 #navbar-show {
   box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-  background-color: #171d257a;
+  background-color: #c5c6c7;
   height: 102px;
-  color: #264753;
+  color: #1f2833;
 }
 
 #navbar-show .bm-burger-bars {
@@ -79,12 +79,12 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: white;
+  background: #66fcf1;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: white;
+  background: #66fcf1;
 }
 
 /* Position and sizing of clickable cross button */
@@ -95,7 +95,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #66fcf1;
 }
 
 /*
@@ -109,9 +109,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background-color: #0b0c10;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
   padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  font-size: 1.55em;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -121,7 +122,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
   padding: 0.8em;
 }
 
@@ -131,7 +131,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: .9em;
 }
 
+.bm-item-list i {
+  color: white;
+}
+
 .anchor-link {
+  color: #66fcf1;
   font-weight: 700;
   margin-left: 10px;
 }
