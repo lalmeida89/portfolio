@@ -159,7 +159,9 @@
       0% { height: 110vh; }
       100%{ height: 80vh; }
   }
-
+  .project-wrapper {
+    padding: 45px 20px;
+  }
   .link-btn, .demo-btn {
     width: 90px;
     font-size: 9px;
@@ -182,8 +184,5 @@
   @keyframes shorten {
       0% { height: 200vw; }
       100%{ height: 150vw; }
-  }
-  .project-wrapper {
-    padding: 45px 20px;
   }
 }
