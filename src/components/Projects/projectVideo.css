@@ -38,6 +38,10 @@
   border-radius: 7px;
 }
 
+.projectVideo-innerDiv>iframe {
+  box-shadow: 20px 20px 30px #000333
+}
+
 @media screen and (min-width: 600px) {
   .projectVideo-innerDiv>iframe {
     width: 500px;
