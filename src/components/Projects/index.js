@@ -64,7 +64,7 @@ class MyProjects extends Component {
           imgSrc={FantasyRankerPSD}
           altSrc='Fantasy Ranker displayed in mobile, tablet, and desktop views'
           desc="Fantasy Football Ranker aims to challenge even the most diehard Football fan and see how well they remember
-            where players ended up last year in their rankings. Built with React and given a sleek and smooth
+            where players ended up last year in their rankings. Built with React and given a sleek 
             interface with the use of React Motion"
           techStack={['fab fa-html5','fab fa-js-square','fab fa-react','fab fa-css3-alt']}
           projectLink='https://romantic-yonath-4a367e.netlify.com/'

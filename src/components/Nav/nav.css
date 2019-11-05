@@ -14,7 +14,6 @@
   transition: all ease .7s;
   left: 0;
   z-index: 800;
-  height: 84px;
   box-shadow: none;
   background-color: #212428;
   color: #66fcf1;
@@ -43,7 +42,7 @@
 
 #navbar-show {
   box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-  background-color: #c5c6c7;
+  background-color: #c5c6c7eb;
   height: 102px;
   color: #1f2833;
 }

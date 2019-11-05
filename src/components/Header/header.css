@@ -28,13 +28,13 @@
 #my-face {
   width: 100%;
   border-radius: 4px;
-  box-shadow: 20px 20px 30px rgba(0,0,0,0.2)
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
 }
 
 #header-picture::after {
   display: block;
   position: relative;
-  background-image: linear-gradient(to bottom, transparent 0%,#0b0c10 100%);
+  background-image: linear-gradient(to bottom, transparent 0%,#212327 100%);
   margin-top: -150px;
   height: 150px;
   width: 100%;
@@ -44,7 +44,6 @@
 @media only screen and (min-width: 601px) {
   .header-wrapper {
     height: 70vh;
-
   }
 
   #header {

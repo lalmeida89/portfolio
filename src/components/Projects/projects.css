@@ -112,18 +112,18 @@
 @media screen and (min-width: 626px) {
   @-webkit-keyframes lengthen {
       0% { height: 700px; }
-      100%{ height: 950px; }
+      100%{ height: 1000px; }
   }
   @keyframes lengthen {
       0% { height: 700px; }
-      100%{ height: 950px; }
+      100%{ height: 1000px; }
   }
   @-webkit-keyframes shorten {
-      0% { height: 950px; }
+      0% { height: 1000px; }
       100%{ height: 700px; }
   }
   @keyframes shorten {
-      0% { height: 950px; }
+      0% { height: 1000px; }
       100%{ height: 700px; }
   }
 }
@@ -131,18 +131,18 @@
 @media screen and (max-width: 625px) {
   @-webkit-keyframes lengthen {
       0% { height: 80vh; }
-      100%{ height: 105vh; }
+      100%{ height: 110vh; }
   }
   @keyframes lengthen {
       0% { height: 80vh; }
-      100%{ height: 105vh; }
+      100%{ height: 110vh; }
   }
   @-webkit-keyframes shorten {
-      0% { height: 105vh; }
+      0% { height: 110vh; }
       100%{ height: 80vh; }
   }
   @keyframes shorten {
-      0% { height: 105vh; }
+      0% { height: 110vh; }
       100%{ height: 80vh; }
   }
 
