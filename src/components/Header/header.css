@@ -8,7 +8,7 @@
 
 #intro-header {
   margin: 40px 0 5px;
-  font-size: 150px;
+  font-size: 135px;
   text-align: justify;
   color: #66fcf1;
   font-family: 'Montserrat', sans-serif;
@@ -79,7 +79,7 @@
   }
 
   #header-description h2 {
-    font-size: larger;
+    font-size: large;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -91,5 +91,9 @@
   #header-description {
     width: 100%;
     padding: 0 10px;
+  }
+
+  #intro-header {
+    text-align: center;
   }
 }
