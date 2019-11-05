@@ -18,28 +18,14 @@ export default class Nav extends Component {
   }
 
   scrollTransition = element => {
-    let screenWidth = window.screen.width
-    if (screenWidth < 600){
       if (element === 'projects'){
-        window.scrollTo({ top: 710, behavior: 'smooth'})
-      }
-      if (element === 'aboutMe'){
-        window.scrollTo({ top: 3000, behavior: 'smooth'})
-      }
-      if (element === 'contact'){
-        window.scrollTo({ top: 3000, behavior: 'smooth'})
-      }
-    }
-    else {
-      if (element === 'projects'){
-        window.scrollTo({ top: 472, behavior: 'smooth'})
+        window.scrollTo({ top: 445, behavior: 'smooth'})
       }
       if (element === 'aboutMe'){
         window.scrollTo({ top: 2600, behavior: 'smooth'})
       }
       if (element === 'contact'){
         window.scrollTo({ top: 3000, behavior: 'smooth'})
-      }
     }
   }
 

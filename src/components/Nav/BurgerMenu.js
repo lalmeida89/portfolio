@@ -19,11 +19,14 @@ export default class BurgerMenu extends React.Component {
   }
 
   scrollTransition = element => {
+    if (element === 'projects'){
+      window.scrollTo({ top: 1000, behavior: 'smooth'})
+    }
     if (element === 'aboutMe'){
       window.scrollTo({ top: 3000, behavior: 'smooth'})
     }
-    if (element === 'projects'){
-      window.scrollTo({ top: 710, behavior: 'smooth'})
+    if (element === 'contact'){
+      window.scrollTo({ top: 3000, behavior: 'smooth'})
     }
     this.closeMenu()
   }
@@ -40,7 +43,7 @@ export default class BurgerMenu extends React.Component {
           <i className="far fa-address-card"></i>
           <span className='anchor-link'>About </span>
         </p>
-        <p id="contact" className="menu-item" href="/contact">
+        <p id="contact" className="menu-item" onClick={()=>this.scrollTransition('contact')}>
           <i className="far fa-envelope"></i>
           <span className='anchor-link'>Contact</span>
         </p>

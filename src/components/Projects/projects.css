@@ -28,11 +28,15 @@
 .projects-container h1 {
   color: #66fcf1;
   margin: -20px 0 -10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .project-wrapper p {
-  line-height: 1.5em;
+  line-height: 120%;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .project-wrapper i {
@@ -44,7 +48,8 @@
   color: #66fcf1;
   font-size: 17px;
   display: block;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   margin: 8px 0 5px;
 }
 
@@ -56,6 +61,8 @@
   position: relative;
   margin: 0 auto;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .link-btn {
@@ -67,6 +74,9 @@
 }
 
 .demo-btn, .link-btn {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   color: white;
   width: 100px;
   height: 30px;

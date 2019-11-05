@@ -11,12 +11,21 @@
   font-size: 150px;
   text-align: justify;
   color: #66fcf1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 #header-description {
   margin: 20px auto 0;
   width: 60%;
   padding: 10px 10vw;
+}
+
+#header-description h2 {
+  padding: 0 0 0 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  line-height: 150%;
   color: white;
 }
 
@@ -55,6 +64,7 @@
   #header-picture {
     position: absolute;
     right: 0;
+    top: 50px;
     width: 325px;
   }
 
@@ -69,7 +79,7 @@
   }
 
   #header-description h2 {
-    font-size: 2vw;
+    font-size: larger;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -80,5 +90,6 @@
 
   #header-description {
     width: 100%;
+    padding: 0 10px;
   }
 }

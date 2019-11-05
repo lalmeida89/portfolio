@@ -19,10 +19,14 @@
 }
 
 .aboutMe h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   color: #66fcf1;
 }
 
 .aboutMe p, .aboutMe a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   color: #c5c6c7;
   line-height: 150%;
 }
