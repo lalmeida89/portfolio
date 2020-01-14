@@ -19,7 +19,6 @@ export class ProjectsWrapper extends Component {
       showVideo: !prevState.showVideo
     }));
   }
-
   render() {
     const {showVideo} = this.state
     return (

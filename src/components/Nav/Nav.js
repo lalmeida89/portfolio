@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BurgerMenu from './BurgerMenu';
+import Logo from '../../images/logo.png'
 import './nav.css';
 
 export default class Nav extends Component {
@@ -62,7 +63,12 @@ export default class Nav extends Component {
     return (
       <div className='navbar' id={this.state.location}>
         <div id='navbar-name'>
-          <h4> Luiz A. </h4>
+          {/*<img id='navbar-logo' src={Logo} />*/}
+          <h4>
+            <span className='firstAndLast'>L</span>
+            <span className='middle'>uiz</span>
+            <span className='firstAndLast'> A.</span>
+          </h4>
         </div>
         {this.checkScreenWidth()}
       </div>

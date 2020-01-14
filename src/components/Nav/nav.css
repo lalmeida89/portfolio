@@ -45,7 +45,6 @@
 }
 
 #navbar-name {
-  display: inline-block;
   left: 36px;
   margin: 0;
   position: absolute;
@@ -58,6 +57,86 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 32px;
+}
+
+#navbar-show #navbar-name {
+  background-image: url('../../images/logo.png');
+  background-size: cover;
+}
+
+#navbar-show #navbar-name img {
+  display: inline-block;
+  animation: imageShow 1000ms forwards ease-in 700ms;
+  -webkit-animation: imageShow 1000ms forwards ease-in 700ms;
+}
+
+@keyframes imageShow {
+  0%  {opacity: 0; width: 0; display: none;}
+  90% {opacity: .1; width: 11em; display: block;}
+  100%{opacity: 1; width: 11em; display: block;}
+}
+
+@-webkit-keyframes imageShow {
+  0%  {opacity: 0; width: 0; display: none;}
+  90% {opacity: .1; width: 11em; display: block;}
+  100%{opacity: 1; width: 11em; display: block;}
+}
+
+#navbar-show #navbar-name .name-show h4{
+  animation: firstAndLastDisappears 500ms forwards ease-out 200ms;
+  -webkit-animation: firstAndLastDisappears 500ms forwards ease-out 200ms;
+}
+
+#navbar-hide #navbar-name .name-show {
+  display: inline-block;
+}
+
+#navbar-show #navbar-name h4 .middle {
+  display: inline-block;
+  animation: middleDisappears 500ms forwards ease-out;
+  -webkit-animation: middleDisappears 500ms forwards ease-out;
+}
+
+#navbar-hide #navbar-name h4 .middle {
+  display: inline-block;
+  animation: middleReappears 500ms forwards ease-out;
+  -webkit-animation: middleReappears 500ms forwards ease-out;
+}
+
+@keyframes middleDisappears {
+  25%  {opacity: .5;width: 1em;}
+  50%  {opacity: 0;width: .5em;}
+  100% {opacity: 0;width: 0;}
+}
+
+@-webkit-keyframes middleDisappears {
+  25%  {opacity: .5;width: 1em;}
+  50%  {opacity: 0;width: .5em;}
+  100% {opacity: 0;width: 0;}
+}
+
+@keyframes middleReappears {
+  25% {opacity: .25; width: .25em; }
+  50% {opacity: .5; width: .5em; }
+  100%{opacity: 1; width: auto;}
+}
+
+@-webkit-keyframes middleReappears {
+  25% {opacity: .25; width: .25em; }
+  50% {opacity: .5; width: .5em; }
+  100%{opacity: 1; width: auto;}
+}
+
+@keyframes firstAndLastDisappears {
+  0%  {display: inline-block;  }
+  50% {opacity: .5; width: 0; height: 0; margin: 0}
+  100%{opacity: 0; width: 0; height: 0; margin: 0}
+}
+
+@-webkit-keyframes firstAndLastDisappears {
+  0%  {display: inline-block; }
+  50% {opacity: .5; width: 0; height: 0; margin: 0}
+  100%{opacity: 0; width: 0; height: 0; margin: 0}
 }
 
 .bm-burger-button {
