@@ -114,13 +114,15 @@
 
 @keyframes firstAndLastDisappears {
   0%  {display: inline-block;}
-  50% {opacity: .5;}
+  25% {opacity: .25;}
+  50% {opacity: 0;}
   100%{opacity: 0;}
 }
 
 @-webkit-keyframes firstAndLastDisappears {
   0%  {display: inline-block;}
-  50% {opacity: .5;}
+  25% {opacity: .25;}
+  50% {opacity: 0;}
   100%{opacity: 0;}
 }
 

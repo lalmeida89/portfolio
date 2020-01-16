@@ -63,7 +63,6 @@ export default class Nav extends Component {
     return (
       <div className='navbar' id={this.state.location}>
         <div id='navbar-name'>
-          {/*<img id='navbar-logo' src={Logo} />*/}
           <h4>
             <span className='firstAndLast'>L</span>
             <span className='middle'>uiz</span>
