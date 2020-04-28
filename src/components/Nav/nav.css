@@ -80,8 +80,8 @@
 
 #navbar-hide #navbar-name h4 .middle {
   display: inline-block;
-  animation: middleReappears 500ms forwards ease-in-out;
-  -webkit-animation: middleReappears 500ms forwards ease-in-out;
+  animation: middleReappears 200ms forwards ease-out;
+  -webkit-animation: middleReappears 200ms forwards ease-out;
 }
 
 @keyframes middleDisappears {

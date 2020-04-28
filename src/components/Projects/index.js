@@ -55,7 +55,7 @@ class MyProjects extends Component {
             schedule and player rankings, and build the
 			      roster of your dreams."
           techStack={['fab fa-html5','fab fa-js-square','fab fa-react','fab fa-css3-alt']}
-          projectLink='http://sharp-nightingale-21d173.netlify.com/'
+          projectLink='https://romantic-yonath-4a367e.netlify.com/'
           codeLink='https://github.com/lalmeida89/FantasyFootball-MockDraft'
           vidSrc='https://www.youtube.com/embed/IJrKlSkxRHA'
           />
@@ -64,10 +64,10 @@ class MyProjects extends Component {
           imgSrc={FantasyRankerPSD}
           altSrc='Fantasy Ranker displayed in mobile, tablet, and desktop views'
           desc="Fantasy Football Ranker aims to challenge even the most diehard Football fan and see how well they remember
-            where players ended up last year in their rankings. Built with React and given a sleek 
+            where players ended up last year in their rankings. Built with React and given a sleek
             interface with the use of React Motion"
           techStack={['fab fa-html5','fab fa-js-square','fab fa-react','fab fa-css3-alt']}
-          projectLink='https://romantic-yonath-4a367e.netlify.com/'
+          projectLink='http://sharp-nightingale-21d173.netlify.com/'
           codeLink='https://github.com/lalmeida89/FantasyFootball-Ranker'
           vidSrc='https://www.youtube.com/embed/IJrKlSkxRHA'
           />
