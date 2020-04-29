@@ -35,7 +35,9 @@ export class ProjectsWrapper extends Component {
             <a href={this.props.projectLink} target='_blank' rel="noopener noreferrer">
               <button className='linkToSite-btn link-btn'>VIEW PROJECT</button>
             </a>
-            <button className='demo-btn' onClick={()=>this.toggleState()}> WATCH DEMO </button>
+            {/* demos are on hold the NFL API is back online after the draft
+              <button className='demo-btn' onClick={()=>this.toggleState()}> WATCH DEMO </button>
+            */}
           </div>
           <ProjectVideo show={showVideo ? 'show' : 'hide'} videoSource={this.props.vidSrc} />
         </div>
